@@ -3,11 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/fontawesome-free-7.1.0-web/css/all.css">
+    <title>Tablas con estilo</title>
+    <style>
+
+        table{
+            margin: auto;
+            margin-top: 50px;
+            border: 3px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 18px;
+        
+        }
+       table th,
+       table td{
+        border: 2px solid blue ;;
+        background-color: aquamarine;
+        font-weight: 600px;
+        width: 100px;
+       }
+       table th,
+       table td:first-child{
+        border: 2px solid blue;
+        background-color: rgb(1, 109, 151);
+        width: 100px;
+        padding: 5px 10px;
+       }
+       table td i
+         {
+          margin: 0 5px;
+          cursor: pointer;
+         }
+         table td i:nth-child(1){
+          color: blue;
+         }
+         table td i:nth-child(2){
+          color: orange;
+         }
+            table td i:nth-child(3){
+            color: red;
+        }
+         table tr:nth-child(odd) td{
+          background-color: rgb(6, 72, 72);
+        }
+        table tr:hover td{
+            background-color: rgb(0, 0, 0);
+            color: white;
+            
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- CONTENIDO DE LOS Cuadros -->
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    ID
+                </th>
+                <th>
+                   Nombres
+                </th>
+                <th>
+                    Apellido
+                </th>
+                <th>
+                    Correo electronico
+                </th>
+                <th>
+                    Opciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    12345
+                </td>
+                <td>
+                    pepe 
+                </td>
+                <td>
+                    robles 
+                </td>
+                <td>
+                    peperobles@gmail.com
+                </td>
+                <td>
+                  <i class="fa-solid fa-circle-info"></i>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3245
+                </td>
+                <td>
+                    Juan
+                </td>
+                <td>
+                    Perez
+                </td>
+                <td>
+                    juanperez@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+                <tr>
+                <td>
+                    9029
+                </td>
+                <td>
+                    Roberto 
+                </td>
+                <td>
+                    Garza
+                </td>
+                <td>
+                    robergarza@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    4567
+                </td>
+                <td>
+                    Maria   
+                </td>
+                <td>
+                    Lopez
+                </td>
+                <td>
+                    asdasdmkn@gmail.com
+                </td>
+                <td>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash"></i>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        7890
+                    </td>
+                    <td>
+                        Ana
+                    </td>
+                    <td>
+                        Torres
+                    </td>
+                    <td>
+                        kaksdjokn@outlook.com
+                    </td>
+                    <td>
+                        <i class="fa-solid fa-circle-info"></i>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <i class="fa-solid fa-trash"></i>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
 </body>
 </html>
